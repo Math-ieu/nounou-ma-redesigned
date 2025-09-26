@@ -47,6 +47,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        nounou: {
+          blue: "hsl(var(--nounou-blue))",
+          pink: "hsl(var(--nounou-pink))",
+          orange: "hsl(var(--nounou-orange))",
+          "light-blue": "hsl(var(--nounou-light-blue))",
+          "light-pink": "hsl(var(--nounou-light-pink))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
