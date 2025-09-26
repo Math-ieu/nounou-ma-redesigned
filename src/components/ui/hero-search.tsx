@@ -6,9 +6,9 @@ import { Card } from "@/components/ui/card";
 import { MapPin, Search } from "lucide-react";
 
 const cities = [
-  "Paris", "Lyon", "Marseille", "Toulouse", "Nice", "Nantes", "Montpellier", "Strasbourg", 
-  "Bordeaux", "Lille", "Rennes", "Reims", "Toulon", "Saint-Étienne", "Le Havre", "Grenoble",
-  "Dijon", "Angers", "Nîmes", "Villeurbanne"
+  "Casablanca", "Rabat", "Marrakech", "Fès", "Tanger", "Agadir", "Salé", "Meknès", 
+  "Oujda", "Kenitra", "Tétouan", "Safi", "Mohammedia", "Khouribga", "Beni Mellal", "El Jadida",
+  "Nador", "Settat", "Larache", "Ksar El Kebir"
 ];
 
 export const HeroSearch = () => {

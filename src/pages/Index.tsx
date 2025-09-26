@@ -1,71 +1,11 @@
 import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
 import { HeroSearch } from "@/components/ui/hero-search";
 import { ProfilesSection } from "@/components/sections/profiles-section";
-import heroImage from "@/assets/hero-family.jpg";
+import { BlogSection } from "@/components/sections/blog-section";
+import { parentsData, nounousData } from "@/data/profiles";
 
-const parentsData = [
-  {
-    id: "1",
-    name: "Amélie",
-    city: "Paris 15ème",
-    type: "parent" as const,
-    description: "Cherche nounou expérimentée pour garder ma fille de 3 ans à temps partiel",
-    isPremium: true,
-    rating: 4.9,
-    availability: "Cherche nounou à temps partiel"
-  },
-  {
-    id: "2",
-    name: "Sophie",
-    city: "Lyon 6ème", 
-    type: "parent" as const,
-    description: "Famille bienveillante recherche nounou pour jumeaux de 18 mois",
-    isPremium: true,
-    availability: "Cherche nounou à plein temps"
-  },
-  {
-    id: "3",
-    name: "Thomas",
-    city: "Marseille",
-    type: "parent" as const,
-    description: "Papa solo cherche aide pour garde de son fils de 5 ans après l'école",
-    isPremium: false,
-    availability: "Cherche nounou après l'école"
-  }
-];
-
-const nounousData = [
-  {
-    id: "1",
-    name: "Rayana",
-    city: "Paris",
-    type: "nounou" as const,
-    description: "Nounou expérimentée, diplômée CAP Petite Enfance. Disponible pour garde à domicile",
-    isPremium: true,
-    rating: 4.8,
-    availability: "Disponible à temps partiel"
-  },
-  {
-    id: "2",
-    name: "Najoua",
-    city: "Lyon",
-    type: "nounou" as const,
-    description: "Assistante maternelle agréée, 8 ans d'expérience avec les tout-petits",
-    isPremium: true,
-    rating: 4.9,
-    availability: "Disponible à plein temps"
-  },
-  {
-    id: "3",
-    name: "Yasmine",
-    city: "Marseille", 
-    type: "nounou" as const,
-    description: "Étudiante en puériculture, douce et patiente avec les enfants",
-    isPremium: false,
-    rating: 4.7,
-    availability: "Disponible le week-end"
-  }
-];
+const heroImage = "https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1200";
 
 const Index = () => {
   return (
@@ -88,7 +28,7 @@ const Index = () => {
         <div className="relative z-20 text-center px-4">
           <div className="mb-8">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 animate-fade-in">
-              1<sup className="text-3xl">er</sup> <span className="text-gradient">SITE</span>
+              1<sup className="text-3xl">er</sup> <span className="text-white">SITE</span>
             </h1>
             <p className="text-2xl md:text-3xl text-white mb-2">
               <span className="italic text-nounou-pink">de mise en relation entre</span>
@@ -127,25 +67,11 @@ const Index = () => {
         profiles={nounousData}
       />
 
+      {/* Blog Section */}
+      <BlogSection />
+
       {/* Footer */}
-      <footer className="bg-muted py-16">
-        <div className="container mx-auto px-4 text-center">
-          <div className="flex items-center justify-center mb-6">
-            <div className="flex items-center">
-              <div className="h-8 w-8 bg-nounou-blue rounded-full mr-2"></div>
-              <div className="h-6 w-6 bg-nounou-pink rounded-full -ml-2"></div>
-            </div>
-            <span className="text-2xl font-bold ml-3">
-              <span className="text-nounou-blue">nounou</span>
-              <span className="text-nounou-pink">connect</span>
-              <span className="text-sm text-muted-foreground">.fr</span>
-            </span>
-          </div>
-          <p className="text-muted-foreground">
-            © 2024 NounouConnect. Tous droits réservés.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

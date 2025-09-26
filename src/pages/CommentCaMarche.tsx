@@ -1,4 +1,5 @@
 import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { UserPlus, Search, MessageCircle, Heart, Shield, Star } from "lucide-react";
@@ -171,6 +172,8 @@ const CommentCaMarche = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };

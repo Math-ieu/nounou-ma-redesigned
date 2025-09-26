@@ -1,76 +1,16 @@
 import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/layout/footer";
 import { ProfileCard } from "@/components/profiles/profile-card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Search, MapPin, Filter } from "lucide-react";
+import { nounousData } from "@/data/profiles";
 
-const nounousData = [
-  {
-    id: "1",
-    name: "Rayana",
-    city: "Paris 16ème",
-    type: "nounou" as const,
-    description: "Nounou expérimentée, diplômée CAP Petite Enfance. 5 ans d'expérience avec les enfants de 0 à 10 ans. Disponible pour garde à domicile.",
-    isPremium: true,
-    rating: 4.8,
-    availability: "Disponible à temps partiel"
-  },
-  {
-    id: "2",
-    name: "Najoua",
-    city: "Lyon 3ème",
-    type: "nounou" as const,
-    description: "Assistante maternelle agréée, 8 ans d'expérience avec les tout-petits. Spécialisée dans l'éveil et les activités créatives.",
-    isPremium: true,
-    rating: 4.9,
-    availability: "Disponible à plein temps"
-  },
-  {
-    id: "3",
-    name: "Yasmine",
-    city: "Marseille 8ème", 
-    type: "nounou" as const,
-    description: "Étudiante en puériculture, douce et patiente avec les enfants. Brevet de secourisme pédiatrique.",
-    isPremium: false,
-    rating: 4.7,
-    availability: "Disponible le week-end"
-  },
-  {
-    id: "4",
-    name: "Fatima",
-    city: "Toulouse",
-    type: "nounou" as const,
-    description: "Nounou bilingue français-arabe, 10 ans d'expérience. Excellentes références, très organisée.",
-    isPremium: true,
-    rating: 4.9,
-    availability: "Disponible à plein temps"
-  },
-  {
-    id: "5",
-    name: "Amélia",
-    city: "Nice",
-    type: "nounou" as const,
-    description: "Ancienne institutrice reconvertie, passionnée par l'éducation des enfants. Aide aux devoirs incluse.",
-    isPremium: true,
-    rating: 4.8,
-    availability: "Disponible après l'école"
-  },
-  {
-    id: "6",
-    name: "Sofia",
-    city: "Nantes",
-    type: "nounou" as const,
-    description: "Nounou expérimentée avec spécialisation Montessori. Créative et bienveillante, références vérifiées.",
-    isPremium: false,
-    rating: 4.6,
-    availability: "Disponible à temps partiel"
-  }
-];
 
 const cities = [
-  "Toutes les villes", "Paris", "Lyon", "Marseille", "Toulouse", "Nice", "Nantes", 
-  "Montpellier", "Strasbourg", "Bordeaux", "Lille", "Rennes", "Reims"
+  "Toutes les villes", "Casablanca", "Rabat", "Marrakech", "Fès", "Tanger", "Agadir", 
+  "Salé", "Meknès", "Oujda", "Kenitra", "Tétouan", "Safi"
 ];
 
 const Nounous = () => {
@@ -157,6 +97,8 @@ const Nounous = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };
